@@ -33,7 +33,7 @@
 .topcorner{
     position:absolute;
     top:0;
-    right:0;
+    right:1rem;
 }
 .togglebtn {
     padding: 10px 30px;
