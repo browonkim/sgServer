@@ -2,11 +2,22 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0.1">
+    <meta http-equiv="refresh" content="0.8">
     <title>기구 사용 조회</title>
+    <style>
+        .box{
+            height: 90%;
+            width: 100%;
+            background-image: url(/img/machineListBackground.jpg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
-<main>
+<main class="box">
     <header><h1>기구 리스트</h1></header>
     <tr th:each="instance: ${machineData}">
         <td>
@@ -16,7 +27,6 @@
         </td>
         <br>
     </tr>
-
 </main>
 </body>
 </html>
